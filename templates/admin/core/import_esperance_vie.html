@@ -1,0 +1,12 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+  <h1>{{ title }}</h1>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>{{ form.csv_file.label_tag }} {{ form.csv_file }}</p>
+    <p>{{ form.csv_file.help_text }}</p>
+    <button type="submit" class="default">Importer</button>
+  </form>
+{% endblock %}
