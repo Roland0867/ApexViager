@@ -22,4 +22,5 @@ admin.site.site_title = "ApexViager"
 admin.site.index_title = "Administration ApexViager"
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('core.urls')),
 ]
