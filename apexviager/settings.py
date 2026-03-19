@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2&vxs3ffdo&9b-2o_c-2odx+cat7kvbonjc(b)$p+rwd^gm_#@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "true"
+DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = ['apexviager-db.onrender.com', 'localhost', '127.0.0.1']
 
