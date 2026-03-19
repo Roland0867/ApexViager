@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-2&vxs3ffdo&9b-2o_c-2odx+cat7kvbonjc(b)$p+rwd^gm_#@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "true"
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['apexviager-db.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
